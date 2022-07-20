@@ -1,0 +1,13 @@
+If you want the full version and license for commercial use,
+you can purchase here :
+
+https://fontkong.com/product/japan-ramenten/
+
+File include : 
+
+1. JapanRamenten.otf
+2. JapanRamenten.ttf
+3. JapanRamenten.woff
+4. JapanRamentenDemo.otf
+5. JapanRamentenDemo.ttf
+6. JapanRamentenDemo.woff
