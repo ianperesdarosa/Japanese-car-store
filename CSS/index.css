@@ -1,5 +1,3 @@
-@charset "UTF-08";
-
 /* Cores
 
 #1A181B
@@ -25,3 +23,42 @@
     Cresta 100
 
 */
+@charset "UTF-08";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'Japan_rementen';
+    src: url(/FONT/japan_rementen/Japan\ ramenten.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2-italic';
+    src: url(/FONT/japan2/JAPAN-Bold-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2';
+    src: url(/FONT/japan2/JAPAN-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'jp-2020';
+    src: url(/FONT/japanese_2020/JAPANESE_2020.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Japan-brush';
+    src: url(/FONT/japanbrush/JAPANBRUSH.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japanola';
+    src: url(/FONT/japanola/Japanola.otf) format('opentype');
+}
+:root{
+    --fon1: 'Japan_rementen';
+    --fon2: 'Japan2-italic';
+    --fon3: 'Japan2';
+    --fon4: 'jp-2020';
+    --fon5: 'Japan-brush';
+    --fon6: 'Japanola';
+}

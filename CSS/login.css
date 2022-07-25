@@ -1,0 +1,164 @@
+@charset "UTF-08";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'Japan_rementen';
+    src: url(/FONT/japan_rementen/Japan\ ramenten.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2-italic';
+    src: url(/FONT/japan2/JAPAN-Bold-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2';
+    src: url(/FONT/japan2/JAPAN-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'jp-2020';
+    src: url(/FONT/japanese_2020/JAPANESE_2020.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Japan-brush';
+    src: url(/FONT/japanbrush/JAPANBRUSH.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japanola';
+    src: url(/FONT/japanola/Japanola.otf) format('opentype');
+}
+:root{
+    --fon1: 'Japan_rementen';
+    --fon2: 'Japan2-italic';
+    --fon3: 'Japan2';
+    --fon4: 'jp-2020';
+    --fon5: 'Japan-brush';
+    --fon6: 'Japanola';
+}
+body{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#1A181B,#564D65,
+    #C03221);
+    background-attachment: fixed;
+}
+main{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+    border-radius: 12px 0px 0px 12px;
+    
+}
+#obj{
+    background-color: #ffffff;
+    width: 400px;
+    height: 500px;
+    border-radius: 0px 12px 12px 0px;
+
+}    
+#obj > h1{
+    text-align: center;
+    font-size: 50px;
+    color: #b62414;
+    font-family: var(--fon2);
+    padding: 20px;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.185);
+    
+}
+form{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    
+}
+label{
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em ;
+    font-weight: 500;
+    padding: 15px 0px 0px 0px;
+}
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+input{
+    width: 300px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    animation: shake;
+}
+#inf:valid{
+    border:  1px solid yellowgreen;
+}
+#inf:invalid{
+    border: 1px solid red;
+    animation: shake 300ms;
+
+}
+#btn-login{
+    display: block;
+    margin: auto;
+    width: 150px;
+    margin-top: 40px;
+}
+#btn-login:hover{
+    background-color: #b62414;
+    color: white;
+    transition: 0.5s;
+}
+@keyframes horizantal-move{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+}
+#link{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-family: var(--fon4);
+    color: black;
+    text-decoration: none;
+}
+#link:hover{
+    animation: horizantal-move 1s ;
+    text-decoration: underline;
+}
+
+
+@media(width: 800px){
+
+    
+
+}
