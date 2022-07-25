@@ -157,8 +157,54 @@ input{
 }
 
 
-@media(width: 800px){
-
+@media(max-width: 1024px){
+    body{
+        width: auto;
+        height: auto;
+        background: linear-gradient(-45deg,#1A181B,#564D65,
+        #C03221);
+        background-attachment: fixed;
+    }
+    main{
+        display: block;
+        width: 320px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    img{
+        display: none;
+    }
+    #obj{
+        background-color: #ffffff;
+        width: 320px;
+        height: 500px;
+        border-radius: 12px;
     
+    }    
+    #obj > h1{
+        text-align: center;
+        font-size: 50px;
+        color: #b62414;
+        font-family: var(--fon2);
+        padding: 20px;
+        text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.185);
+        
+    }
+    form{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        
+    }
+    label{
+        display: block;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2em ;
+        font-weight: 500;
+        padding: 15px 0px 0px 0px;
+    }
 
 }
