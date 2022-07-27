@@ -4,60 +4,126 @@
     padding: 0px;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Japan_rementen';
+    src: url(/FONT/japan_rementen/Japan\ ramenten.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2-italic';
+    src: url(/FONT/japan2/JAPAN-Bold-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japan2';
+    src: url(/FONT/japan2/JAPAN-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'jp-2020';
+    src: url(/FONT/japanese_2020/JAPANESE_2020.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Japan-brush';
+    src: url(/FONT/japanbrush/JAPANBRUSH.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Japanola';
+    src: url(/FONT/japanola/Japanola.otf) format('opentype');
+}
+:root{
+    --fon1: 'Japan_rementen';
+    --fon2: 'Japan2-italic';
+    --fon3: 'Japan2';
+    --fon4: 'jp-2020';
+    --fon5: 'Japan-brush';
+    --fon6: 'Japanola';
+}
 header{
     height: 150px;
-    background: url(/IMG/japan-wall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    filter: brightness(0.4);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: var(--fon5);
 }
 main{
-    background: linear-gradient(-45deg,#1A181B,#564D65,#8a2317);
+    background-color: #7a7a7a;
     background-attachment: fixed;
 }
 section{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
     padding: 25px;
-    background-color: white;
+    
 }
 img{
-    width: 500px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
     display: block;
-    border-radius: 12px;
-    margin-right: 20px;
+    border-radius: 7px;
+    margin: 40px;
+    border: 4px solid white;
+
 }
 #conteudo{
-    width: 400px;
-    height: 250px;
-    background-color: darkgray;
-    border-radius: 12px;
+    width: 800px;
+    height: 700px;
+    background-color: white;
+    border-radius: 5px;
     padding: 15px;
+
 }
 #conteudo h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 20px;
-}#conteudo p{
+}
+#conteudo p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     margin-top: 40px;
 }
-#btn-buy{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    color: white;
-    background-color: red;
-    border-radius: 12px;
-    width: 80px;
-    height: 60px;
-
-    margin-top: 30px;
-    float: right;
+aside{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
 }
-#btn-buy:hover{
-    transform: translateX(-20px);
-    transition: 0.5s;
+#contato{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
+#contato > h1{
+    text-align: center;
+    font-family: var(--fon2);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 8px;
+}
+.inf{
+    width: 300px;
+    padding: 10px;
+}
+#btn{
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
 }
