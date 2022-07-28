@@ -1,6 +1,6 @@
 @charset "UTF-08";
 *{
-    margin: 0px;
+    margin: 00px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -70,9 +70,9 @@ header h1{
     background-color: rgb(43, 43, 43);
 }
 main{
-    background-color: #818181;
+    background-color: rgb(218, 218, 218);
     width: auto;
-    height: 220vh;
+    height: auto;
 }
 section{
     display: flex;
@@ -89,6 +89,7 @@ img{
     border-radius: 7px;
     margin: 40px;
     border: 4px solid white;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.651);
 
 }
 
@@ -102,25 +103,29 @@ aside{
 #conteudo{
     width: 600px;
     height: 800px;
-    background-color: white;
+    background-color: rgb(43, 43, 43);
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
+    margin-bottom: 50px;
 
 }
 #conteudo h1{
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 15px;
     margin-bottom: 20px;
     text-align: center;
-    text-decoration: underline;
 }
 #conteudo p{
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     margin-top: 40px;
 }
 #title{
+    color: white;
     font-size: 1em;
     margin-bottom: 10px;
 }
@@ -138,18 +143,21 @@ aside{
     font-size: 1em;
     color: black;
     padding: 5px;
-    
+    color: white;
 }
 span{
     float: right;
     font-weight: bold;
+    color: white;
 }
 #contato{
     width: 350px;
     height: 400px;
-    background-color: white;
+    background-color: rgb(150, 150, 150);
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
+    margin-bottom: 50px;
 }
 #contato > h1{
     text-align: center;
@@ -163,10 +171,12 @@ label{
     display: block;
     margin-bottom: 5px;
     margin-top: 8px;
+    font-weight: bold;
 }
 .inf{
     width: 300px;
     padding: 10px;
+   font-size: 1em;
 }
 #btn{
     width: 120px;
@@ -174,8 +184,16 @@ label{
     display: block;
     margin: auto;
     margin-top: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    border: none;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.568);
+}
+#btn:hover{
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
 
-}
-footer{
-    height: 200px;
-}
