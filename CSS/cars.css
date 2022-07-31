@@ -108,7 +108,7 @@ aside{
     padding: 15px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
     margin-bottom: 50px;
-    margin: 25px;
+    
 
 }
 #conteudo h1{
@@ -156,18 +156,22 @@ hr{
 }
 #contato{
     width: 350px;
-    height: 400px;
+    height: 500px;
     background-color: rgb(150, 150, 150);
     border-radius: 5px;
     padding: 15px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
     margin-bottom: 50px;
+
 }
 #contato > h1{
     text-align: center;
     font-family: var(--fon2);
     padding: 15px;
     margin-bottom: 20px;
+}
+form{
+    margin: auto    ;
 }
 label{
     font-family: Arial, Helvetica, sans-serif;
@@ -178,9 +182,17 @@ label{
     font-weight: bold;
 }
 .inf{
-    width: 300px;
+    width: 320px;
     padding: 10px;
    font-size: 1em;
+  
+}
+textarea{
+    width: 320px;
+    height: 150px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 5px;
 }
 #btn{
     width: 120px;
@@ -208,7 +220,7 @@ label{
     background: red;
 }
 
-@media(max-width: 600px){
+@media(max-width: 500px){
     img{
         width: 340px;
         height: 220px;
@@ -220,7 +232,6 @@ label{
     #conteudo > h1{
         font-size: 1em;
         text-align: center;
-        width: 100px;
     }
     li{
         width: 300px;
