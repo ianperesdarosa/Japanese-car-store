@@ -37,6 +37,7 @@
     --fon5: 'Japan-brush';
     --fon6: 'Japanola';
 }
+
 header{
     height: 150px;
     background-color: white;
@@ -54,6 +55,7 @@ header >h1{
 main{
     background-color: #c5c5c5;
 }
+
 .line{
     width: 850px;
     height: 1.5px;
@@ -141,9 +143,16 @@ footer{
     height: 200px;
     background-color: #1A181B;
 }
-@media (max-width: 800px) {
+::-webkit-scrollbar {
+    width: 15px;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: red;
+}
+@media (max-width: 600px) {
     .line{
-        width: 400px;
+        width: 200px;
     }
     
 }

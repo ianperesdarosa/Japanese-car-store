@@ -151,6 +151,9 @@ span{
     font-weight: bold;
     color: white;
 }
+hr{
+    width: auto;
+}
 #contato{
     width: 350px;
     height: 400px;
@@ -197,13 +200,15 @@ label{
     transition: 0.5s;
     transform: scale(1.1);
 }
+::-webkit-scrollbar {
+    width: 15px;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: red;
+}
 
-@media(max-width: 800px){
-
-    main{
-        width: auto;
-        height: auto;
-    }
+@media(max-width: 600px){
     img{
         width: 340px;
         height: 220px;
@@ -211,6 +216,11 @@ label{
     #conteudo{
         width: 350px;
         height: 700px;
+    }
+    #conteudo > h1{
+        font-size: 1em;
+        text-align: center;
+        width: 100px;
     }
     li{
         width: 300px;
