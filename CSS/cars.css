@@ -108,6 +108,7 @@ aside{
     padding: 15px;
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
     margin-bottom: 50px;
+    margin: 25px;
 
 }
 #conteudo h1{
@@ -197,3 +198,28 @@ label{
     transform: scale(1.1);
 }
 
+@media(max-width: 800px){
+
+    main{
+        width: auto;
+        height: auto;
+    }
+    img{
+        width: 340px;
+        height: 220px;
+    }
+    #conteudo{
+        width: 350px;
+        height: 700px;
+    }
+    li{
+        width: 300px;
+    }
+    hr{
+        width: 300px;
+    }
+    #contato{
+        margin-bottom: 40px;
+    }
+
+}
