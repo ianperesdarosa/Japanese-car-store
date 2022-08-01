@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['email']) && !empty(($_POST['email'])){
+    if(isset($_POST['email']) && !empty($_POST['email'])){
 
 
     $nome = addcslashes($_POST['nome']);
@@ -11,7 +11,7 @@
     $body = "Nome: ".$nome. "\r\n. E-mail: ".$email. "\r\n. Mensagem: ".$msg;
 
 
-    $header = "From: ianperesdarosa2004@gmail.com"."\r\n"."Reply-To:".$email."\e\n".X=Mailer:PHP/".phpversion();
+    $header = "From: ianperesdarosa2004@gmail.com"."\r\n"."Reply-To:".$email."\e\n"."X=Mailer:PHP/".phpversion();
 
 
 
