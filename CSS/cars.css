@@ -48,7 +48,7 @@ header{
     align-items: center;
     text-align: center;
 }
-header h1{
+header > h1{
     color: black;
     font-size: 50px;
     font-weight: 500;
@@ -59,6 +59,7 @@ header h1{
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 .link{
     color: white;
