@@ -127,7 +127,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;gap: 30px;
+    justify-content: flex-start;
+    gap: 30px;
 }
 #container-img > img{
     width: 350px;
