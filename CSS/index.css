@@ -157,7 +157,7 @@ span{
 }
 footer{
     height: 150px;
-    background-color: #1A181B;
+    background: linear-gradient(45deg, #1A181B, #373638, #272627);
     display: flex;
     align-items: center;
     justify-content: space-around;
