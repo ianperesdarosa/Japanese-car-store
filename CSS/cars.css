@@ -36,9 +36,12 @@
     --fon5: 'Japan-brush';
     --fon6: 'Japanola';
 }
-body{
-    background-color: #dadada;
-    margin: auto;
+::-webkit-scrollbar {
+    width: 15px;
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: red;
 }
 header{
     height: 150px;
@@ -50,120 +53,88 @@ header{
 }
 header > h1{
     color: black;
-    font-size: 50px;
+    font-size: 2.5em;
     font-weight: 500;
     font-family: var(--fon5);
 }
-#menu{
+
+nav{
     background-color: black;
-    height: auto;
+    height: 70px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-end;
 }
-.link{
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--fon4);
+#element{
     padding: 15px;
-
-}
-.link:hover{
-    color: red;
-    transition: 0.5s;
-    background-color: rgb(43, 43, 43);
-}
-
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-img{
-    min-width: 320px;
-    max-width: 500px;
-    min-height: 350px;
-    max-height: 300px;
+    filter: invert(100%);
     display: block;
-    border-radius: 7px;
-    margin: 40px;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 50%;
+}
+#car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+    background-color: #cac9c994;
+    
+}
+#car > img{
+    width: 70%;
+    height: auto;
+    display: block;
     border: 2px solid white;
-    box-shadow: 1px 7px 10px #000000a6;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.541);
 }
 
 aside{
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    gap: 80px;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+    background-color: #cac9c994;
 }
-#conteudo{
-    width: 600px;
-    height: 820px;
-    background-color: #2b2b2b;
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 2px 5px 8px #00000083;
-    margin-bottom: 50px;
-    
+
+.info-car{
+    width: 700px;
+    padding: 25px;
+    background-color: #353535;
+    color: white;
+    border-radius: 10px;
 
 }
-#conteudo h1{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    margin-top: 15px;
-    margin-bottom: 20px;
+.info-car > h1{
     text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
 }
-#conteudo p{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    margin-top: 40px;
-}
-#title{
-    color: white;
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-#espe{
-    margin: auto;
-    width: 500px;
-    padding: 12px;
-    
-}
-#espe ul{
+ul{
     list-style: none;
-}
-#espe li{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    color: black;
-    padding: 5px;
-    color: white;
 }
 span{
     float: right;
-    font-weight: bold;
-    color: white;
 }
-hr{
-    width: auto;
-}
-#contato{
+.contato{
     width: 350px;
     height: 500px;
     background-color: rgb(150, 150, 150);
     border-radius: 5px;
     padding: 15px;
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.514);
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.603);
     margin-bottom: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.178) ;
 
 }
-#contato > h1{
+.contato > h1{
     text-align: center;
     font-family: var(--fon2);
     padding: 15px;
@@ -180,7 +151,7 @@ label{
 .inf{
     width: 320px;
     padding: 10px;
-   font-size: 1em;
+    font-size: 1em;
   
 }
 textarea{
@@ -208,39 +179,5 @@ textarea{
     transition: 0.5s;
     transform: scale(1.1);
 }
-::-webkit-scrollbar {
-    width: 15px;
-    background: black;
-}
-::-webkit-scrollbar-thumb {
-    background: red;
-}
 
-@media(max-width: 800px){
-    section{
-        width: auto;
-        height: auto;
-    }
-    img{
-        width: 420px;
-        height: 250px;
-    }
-    #conteudo{
-        width: 350px;
-        height: 700px;
-    }
-    #conteudo > h1{
-        font-size: 1em;
-        text-align: center;
-    }
-    li{
-        width: 300px;
-    }
-    hr{
-        width: 300px;
-    }
-    #contato{
-        margin-bottom: 30px;
-    }
 
-}
