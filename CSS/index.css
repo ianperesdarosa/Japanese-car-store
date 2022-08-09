@@ -178,8 +178,8 @@ footer > h1{
     background: red;
 }
 @media (max-width: 800px) {
-    .card:hover{
-        display: none;
+    #roni{
+     display: none;
     }
     section{
         display: flex;
